@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Find your Car">
+        <div class="slds-align_absolute-center" >
+            <lightning-combobox value={selectedLocation}
+                            options={optionArray}
+                            onchange={handleOptionChange}>
+             </lightning-combobox>
+        </div>
+    </lightning-card>
+
+   <c-car-details></c-car-details>
+</template>

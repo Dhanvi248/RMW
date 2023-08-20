@@ -1,0 +1,18 @@
+<template>
+    <lightning-card icon-name="standard:actions_and_buttons" >
+        <template if:true={Mydata}>
+            <span slot="title">{Mydata.Name}</span>
+            <div class="slds-m-bottom_small" style="background-color: #000000;">
+              <div class="image"> <img src={Mydata.Picture_Url__c}></div>
+                <p class="Heading">Car Details :</p>
+                <br>
+                <b><p class="details">Car Name : {Mydata.Name}</p>
+                    <p class="details">Available Car : {Mydata.Available_Cars__c}</p>
+                    <p class="details">Price : {Mydata.Car_Price__c} </p></b>
+            </div>
+        </template>
+        <template if:false={Mydata}>
+            <p class="slds-m-bottom_small">Select Car to See the Details</p>
+        </template>
+    </lightning-card>
+</template>

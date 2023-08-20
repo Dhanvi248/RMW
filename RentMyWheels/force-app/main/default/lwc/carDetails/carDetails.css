@@ -1,0 +1,30 @@
+.title img{
+    width: 320px;
+    height: 200px;
+    /* padding: 1px; */
+    background-position: center;
+    border-radius: 5px;
+}
+
+.title_wrapper{
+    cursor: pointer;
+    padding:5px;
+    margin: 10px;
+    background-color: #000000/*#FBEEC1*/;
+
+}
+.selected{
+    border : 6px solid #b33434;
+    border-radius: 10px;
+
+}
+.card{
+    background-color: rgb(168, 201, 190);
+    /* background-color: #B1A296; */
+}
+.Name{
+    font-size: 30px;
+    font: bolder;
+    font-style: oblique;
+    color: aliceblue;
+}

@@ -1,0 +1,27 @@
+<template>
+    <lightning-card>
+        <lightning-layout multiple-rows="true" class="card">
+            <!--For boxes of Car-->
+             <template if:true={carData} >
+                <template for:each={carData} for:item="Car">
+                    <lightning-layout-item size="4" key={Car.Id} padding="around-small"  
+                    class="slds-align_absolute-center">
+
+                    <!--Card Starts here-->
+                    <div class="title_wrapper"  onclick={handleClickCarCard} data-id={Car.Id}>
+                      <!--Image Section-->
+                        <div class="title">
+                            <img src={Car.Picture_Url__c}>
+                        </div>
+                        <div class="detail">       
+                            <p class= "Name">{Car.Name}</p>
+                        
+                        </div>
+                    </div>
+        
+                    </lightning-layout-item>
+                </template>
+            </template>
+        </lightning-layout>
+    </lightning-card>
+</template>
